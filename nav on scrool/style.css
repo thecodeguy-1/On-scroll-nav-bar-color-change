@@ -1,0 +1,124 @@
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding-top: 10px;
+    z-index: 100;
+  
+}
+header a{
+    text-decoration: none;
+}
+.myul li {
+    list-style-type: none;
+    margin: 0 20px 0 20px;
+}
+.myul{
+    display: flex;
+}
+.myul li a {
+    text-decoration: none;
+    color:white;
+    font-size: medium;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+  
+}
+.logo a:hover {
+    background-color: black;
+    padding: 10px;
+    border-radius: 45px;
+    font-size: larger;
+    font-weight: bolder;
+   
+}
+.myul li a:hover{
+    background-color: black;
+    padding: 10px;
+    border-radius: 45px;
+}
+.sticky{
+    background-color: white;
+box-shadow: black 0 0 10px 0;
+}
+.sticky .logo a{
+    color: black;
+}
+.sticky .myul li a{
+  color: black;
+  font-weight: bolder;
+}
+.sticky .myul li a:hover{
+    background-color:black;
+    color: white;
+}
+.sticky .logo a:hover{
+    background-color:black;
+    color: white;
+}
+.mymenubutton{
+    display: none;
+}
+.mobileul{
+    display: none;
+}
+
+@media screen and (max-width: 790px){
+ .myul{
+     display: none;
+ }
+ .logo{
+     margin-right: 300px;
+ }
+ .mymenubutton{
+    display: block;
+    color: white;
+}
+.mobileul{
+display: block;
+position: fixed;
+background-color: cornflowerblue;
+width: 100%;
+height: 100%;
+z-index: 100;
+transform: translateX(-590px);
+transition: 0.9s ease;
+
+}
+.myslide{
+    transform: translateX(0);
+}
+.mobileul a {
+color: white;
+font-size: 20px;
+font-weight: bolder;
+margin-left: 80px;
+}
+.mobile-ul-ul{
+justify-content: center;
+}
+.mobile-ul-ul li {
+   list-style: none;
+   padding: 10px 0 10px 0;
+
+}
+.closebutton{
+    float: right;
+    color: white;
+}
+}
+/*******/
+.banner{
+    height: 1000px;
+    background-color: slategray;
+}
+
+/***************/
